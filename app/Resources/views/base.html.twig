@@ -1,13 +1,19 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8" />
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>{% block title %}Welcome!{% endblock %}</title>
        	<link rel="stylesheet" href="{{ ('bundles/app/dist/app.css') }}" />
+        <link href='//cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' rel='stylesheet' type='text/css'>
+
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
-    </body>
+</head>
+<body>
+    {% block stylesheets %}{% endblock %}
+    {% include "::default/header.html.twig" %}
+    {% block body %}{% endblock %}
+    {% block javascripts %}{% endblock %}
+    {% include "::default/footer.html.twig" %}
+</body>
 </html>
