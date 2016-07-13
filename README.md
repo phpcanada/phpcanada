@@ -4,9 +4,11 @@
 
 ###Front-end:
 
-**To install foundation-cli:**
+**To install foundation-cli and gulp-sass:**
 
-`sudo npm install -g foundation-cli` (Ubuntu Linux)
+`sudo npm install -g foundation-cli`
+
+`sudo npm install -g gulp-sass`
 
 **To compile the css:**
 
