@@ -72,3 +72,10 @@ fos_user:
     db_driver: orm
     firewall_name: main
     user_class: AppBundle\Entity\User
+
+# Doctrine Migrations
+doctrine_migrations:
+    dir_name: "%kernel.root_dir%/DoctrineMigrations"
+    namespace: AppBundle\Migrations
+    table_name: migration_versions
+    name: PhpCanada Migrations
