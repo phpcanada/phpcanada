@@ -1,16 +1,8 @@
 # phpcanada
 
--
-
 ###Requirements:
 
-1) PHP 7
-
-2) MySQL
-
-3) NodeJS
-
-4) Nginx
+- PHP 7, MySQL, NodeJS, Nginx
 
 ###Front-end:
 
@@ -38,7 +30,7 @@ To customize the application:
 
 ###Back-end:
 
-**Useful commands:**
+Useful commands:
 
 `php bin/console` (All console commands)
 
@@ -51,5 +43,3 @@ To customize the application:
 `php bin/console doctrine:migrations:status --show-versions`
 
 `php bin/console doctrine:migrations:generate` (Auto-generate migration file)
-
-
