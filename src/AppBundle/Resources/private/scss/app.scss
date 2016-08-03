@@ -48,3 +48,21 @@
 
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+a {
+  color: #C82829;
+}
+
+a:hover {
+  border-color: #FFFFFF;
+}
+
+.top-bar, .top-bar ul {
+  background-color: #000000;
+}
+
+.callout.secondary {
+  background-color: #000000;
+  color: #3c3c3c;
+}
+
