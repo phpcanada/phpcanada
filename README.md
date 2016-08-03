@@ -1,45 +1,36 @@
 # phpcanada
 
--
-
 ###Requirements:
 
-1) PHP 7
-
-2) MySQL
-
-3) NodeJS
-
-4) Nginx
+- PHP 7, MySQL, NodeJS, Nginx
 
 ###Front-end:
 
-**To install foundation-cli and gulp-sass:**
+- CSS Code Style: http://cssguidelin.es/
 
-`sudo npm install -g foundation-cli`
+To install foundation-cli and gulp-sass:
 
-`sudo npm install -g gulp-sass`
+    sudo npm install -g foundation-cli
+    sudo npm install -g gulp-sass
+    sudo npm install
 
-`sudo npm install`
+To compile the css:
 
-**To compile the css:**
+    cd src/AppBundle/Resources/private
+    foundation build
 
-`cd src/AppBundle/Resources/private`
+To install/update the assets:
 
-`foundation build`
+    php bin/console assets:install
 
-**To install/update the assets:**
+To customize the application:
 
-`php bin/console assets:install`
-
-**To customize the application:**
-
-`vim /src/AppBundle/Resources/private/scss/app.scss`
+    vim /src/AppBundle/Resources/private/scss/app.scss
 
 
 ###Back-end:
 
-**Useful commands:**
+Useful commands:
 
 `php bin/console` (All console commands)
 
@@ -52,5 +43,3 @@
 `php bin/console doctrine:migrations:status --show-versions`
 
 `php bin/console doctrine:migrations:generate` (Auto-generate migration file)
-
-
