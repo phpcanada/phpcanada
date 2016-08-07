@@ -2,7 +2,11 @@
 
 ###Requirements:
 
-- PHP 7, MySQL, NodeJS, Nginx
+- PHP 7, MySQL, npm/NodeJS, Nginx
+
+###PHP Code Style:
+
+- Let's use [PSR-2](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md)
 
 ###Front-end:
 
