@@ -1,3 +1,11 @@
 app:
     login: 'Login'
     create_account: 'Create Account'
+    slack: 'Slack Chat'
+    event: 'Event'
+    events: 'Events'
+    contact_us: 'Contact us'
+    article: 'Article'
+    articles: 'Articles'
+    jobs: 'Jobs'
+    support: 'Support us'
