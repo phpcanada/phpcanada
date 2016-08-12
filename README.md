@@ -1,5 +1,10 @@
 # phpcanada
 
+###Slack Channel:
+
+https://phpcanada.herokuapp.com/
+
+
 ###Requirements:
 
 - PHP 7, MySQL, npm/NodeJS, Nginx
