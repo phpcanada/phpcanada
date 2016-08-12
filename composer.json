@@ -1,6 +1,6 @@
 {
     "name": "rodolfo/phpcanada",
-    "license": "proprietary",
+    "license": "MIT",
     "type": "project",
     "autoload": {
         "psr-4": {
