@@ -36,6 +36,9 @@ framework:
 twig:
     debug:            "%kernel.debug%"
     strict_variables: "%kernel.debug%"
+    globals:
+        slackin: 'http://phpcanada.herokuapp.com'
+        website_name: 'PHP Canada Community'
 
 # Doctrine Configuration
 doctrine:
