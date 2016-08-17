@@ -1,5 +1,6 @@
 app:
     login: 'Login'
+    logout: 'Logout'
     create_account: 'Create Account'
     slack: 'Slack Chat'
     event: 'Event'
@@ -9,3 +10,4 @@ app:
     articles: 'Articles'
     jobs: 'Jobs'
     support: 'Support us'
+    my_profile: 'My Profile'
