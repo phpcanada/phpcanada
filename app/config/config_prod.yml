@@ -32,7 +32,5 @@ hwi_oauth:
     resource_owners:
         github:
             type: github
-            client_id: 'client_id'
-            client_secret: 'client_secret'
-            options:
-                csrf: true
+            client_id: "%github_app_id%"
+            client_secret: "%github_app_token%"

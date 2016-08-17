@@ -12,3 +12,6 @@ parameters:
 
     # A secret key that's used to generate certain security-related tokens
     secret:            ThisTokenIsNotSoSecretChangeIt
+
+    github_app_id: ''
+    github_app_token: ''
