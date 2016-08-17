@@ -18,9 +18,44 @@ class User extends BaseUser
      */
     protected $id;
 
-    public function __construct()
+    /** @ORM\Column(name="github_id", type="string", length=255, nullable=true) */
+    protected $github_id;
+
+    /** @ORM\Column(name="github_access_token", type="string", length=255, nullable=true) */
+    protected $github_access_token;
+
+
+
+
+    /**
+     * @return mixed
+     */
+    public function getGithubId()
     {
-        parent::__construct();
-        // phpcanada logic here
+        return $this->github_id;
+    }
+
+    /**
+     * @param mixed $github_id
+     */
+    public function setGithubId($github_id)
+    {
+        $this->github_id = $github_id;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getGithubAccessToken()
+    {
+        return $this->github_access_token;
+    }
+
+    /**
+     * @param mixed $github_access_token
+     */
+    public function setGithubAccessToken($github_access_token)
+    {
+        $this->github_access_token = $github_access_token;
     }
 }

@@ -32,3 +32,20 @@ monolog:
 
 #swiftmailer:
 #    delivery_address: me@example.com
+
+hwi_oauth:
+    connect:
+        account_connector: my.custom.user_provider
+    firewall_names:
+        - 'main'
+    fosub:
+        username_iterations: 30
+        properties:
+            github: github_id
+    resource_owners:
+        github:
+            type: github
+            client_id: 'client_id'
+            client_secret: 'client_secret'
+            options:
+                csrf: true

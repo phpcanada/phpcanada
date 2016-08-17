@@ -82,3 +82,4 @@ doctrine_migrations:
     namespace: AppBundle\Migrations
     table_name: migration_versions
     name: PhpCanada Migrations
+
