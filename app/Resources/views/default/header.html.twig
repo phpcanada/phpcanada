@@ -3,14 +3,21 @@
     <div class="top-bar">
         <div class="top-bar-left">
             <ul class="menu">
+                <li>
+                    <a href="/login/github" class="nice small radius black button">
+                        <i class="fi-social-github"></i>
+                        Sign in with Github
+                    </a>
+                </li>
                 <li><a href="{{ url('fos_user_security_login') }}">{{ 'app.login'|trans({}, 'links') }}</a></li>
                 <li><a href="{{ url('fos_user_registration_register') }}">{{ 'app.create_account'|trans({}, 'links') }}</a></li>
             </ul>
         </div>
         <div class="top-bar-right">
             <ul class="menu">
-                <li><input type="search" placeholder="Search"></li>
-                <li><button type="button" class="button">Search</button></li>
+                <li>
+                    <a href="{{ github_link }}" target="_blank"><i class="fi-social-github"></i> Github</a>
+                </li>
             </ul>
         </div>
     </div>

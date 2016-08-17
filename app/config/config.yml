@@ -39,6 +39,7 @@ twig:
     globals:
         slackin: 'http://phpcanada.herokuapp.com'
         website_name: 'PHP Canada Community'
+        github_link: 'https://github.com/phpcanada'
 
 # Doctrine Configuration
 doctrine:
