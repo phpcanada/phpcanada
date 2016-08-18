@@ -40,9 +40,8 @@ class MyFOSUBUserProvider extends BaseClass
      */
     public function loadUserByOAuthUserResponse(UserResponseInterface $response)
     {
-        $userEmail = $response->getEmail();
-        $user = $this->userManager->findUserByEmail($userEmail);
-        $username = $response->getRealName();
+        $username = $response->getUsername();
+        $user = $this->userManager->findUserBy(array($this->getProperty($response) => $username));
 
         if (null === $user) {
             $service = $response->getResourceOwner()->getName();
@@ -54,19 +53,19 @@ class MyFOSUBUserProvider extends BaseClass
             $user->$setter_id($username);
             $user->$setter_token($response->getAccessToken());
 
-            $user->setUsername($username);
-            $user->setEmail($username);
+            $user->setUsername($response->getNickname());
+            $user->setEmail($response->getEmail());
             $user->setPassword($username);
             $user->setEnabled(true);
             $this->userManager->updateUser($user);
-
             return $user;
         }
 
+        $user = parent::loadUserByOAuthUserResponse($response);
         $serviceName = $response->getResourceOwner()->getName();
         $setter = 'set' . ucfirst($serviceName) . 'AccessToken';
-        $user->$setter($response->getAccessToken());
 
+        $user->$setter($response->getAccessToken());
         return $user;
     }
 }
