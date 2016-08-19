@@ -24,6 +24,7 @@ Bitcoin: `18eA7mGb6xi89eQMjiNro5ykD7zSuKsngA`
 ###PHP Code Style:
 
 - Let's use [PSR-2](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md)
+- `./vendor/bin/phpcs file.php --standard=PSR2`
 
 ###Front-end:
 
