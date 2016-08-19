@@ -2,12 +2,10 @@
 
 namespace AppBundle\Command;
 
-use AppBundle\Entity\User;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
 use Symfony\Component\Console\Formatter\OutputFormatterStyle;
-
 
 class ListUsersCommand extends ContainerAwareCommand
 {
@@ -33,6 +31,8 @@ class ListUsersCommand extends ContainerAwareCommand
                     sprintf("\t[%d] %s", $user->getId(), $user->getEmail())
                 );
             }
+        } else {
+            $output->writeln('No users yet.');
         }
 
         $output->writeln([

@@ -8,4 +8,3 @@ class UserRepository extends EntityRepository
 {
     // Logic here
 }
-
