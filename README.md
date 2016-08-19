@@ -1,13 +1,25 @@
-# phpcanada
+```
+  ____  _   _ ____   ____                      _        
+ |  _ \| | | |  _ \ / ___|__ _ _ __   __ _  __| | __ _   ___ __ _ 
+ | |_) | |_| | |_) | |   / _` | '_ \ / _` |/ _` |/ _` | / __/ _` |
+ |  __/|  _  |  __/| |__| (_| | | | | (_| | (_| | (_| || (_| (_| |
+ |_|   |_| |_|_|    \____\__,_|_| |_|\__,_|\__,_|\__,_(_)___\__,_|
+                                                                  
+```
 
 ###Slack Channel:
 
 https://phpcanada.herokuapp.com/
 
-
 ###Requirements:
 
 - PHP 7, MySQL, npm/NodeJS, Nginx
+
+
+###Donate and help us to maintain the server:
+
+Bitcoin: `18eA7mGb6xi89eQMjiNro5ykD7zSuKsngA`
+
 
 ###PHP Code Style:
 
