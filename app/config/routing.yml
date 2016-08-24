@@ -2,6 +2,12 @@ app:
     resource: "@AppBundle/Controller/"
     type:     annotation
 
+switch_locale:
+    path:     /language/{_locale}
+    defaults: { _controller: AppBundle:Default:index }
+    requirements:
+        _locale: en|fr
+
 
 
 #FosUserBundle Routes

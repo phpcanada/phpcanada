@@ -21,7 +21,11 @@
         <div class="top-bar-right">
             <ul class="menu">
                 <li>
-                    <a href="{{ github_link }}" target="_blank"><i class="fi-social-github"></i> Github</a>
+                    {% if app.request.getLocale() == 'en' %}
+                        <a href="{{ url('switch_locale', {'_locale': 'fr'}) }}">French</a>
+                    {% else %}
+                        <a href="{{ url('switch_locale', {'_locale': 'en'}) }}">English</a>
+                    {% endif %}
                 </li>
             </ul>
         </div>
@@ -61,6 +65,9 @@
             </li>
             <li>
                 <a href="#">{{ 'app.contact_us'|trans({}, 'links') }}</a>
+            </li>
+            <li>
+                <a href="{{ github_link }}" target="_blank"><i class="fi-social-github"></i> Github</a>
             </li>
         </ul>
     </div>

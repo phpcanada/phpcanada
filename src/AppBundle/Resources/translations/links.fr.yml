@@ -1,3 +1,13 @@
 app:
-    login: S'identifier
-    create_account: Créer un compte
+    login: "S'identifier"
+    logout: 'Déconnexion'
+    create_account: 'Créer un compte'
+    slack: 'Chat Slack'
+    event: 'Événement'
+    events: 'Événements'
+    contact_us: 'Nous contacter'
+    article: 'Article'
+    articles: 'Articles'
+    jobs: 'Jobs'
+    support: 'Soutenez-nous'
+    my_profile: 'Mon profil'
