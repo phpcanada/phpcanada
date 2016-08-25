@@ -19,7 +19,7 @@ class LocaleTest extends WebTestCase
 
         $this->assertEquals(200, $client->getResponse()->getStatusCode());
         $this->assertContains('French',
-            $crawler->filter('body > header > div:nth-child(1) > div.top-bar-right > ul > li > a')->text()
+            $crawler->filter('#language-changer')->text()
         );
     }
 
@@ -36,7 +36,7 @@ class LocaleTest extends WebTestCase
 
         $this->assertEquals(200, $client->getResponse()->getStatusCode());
         $this->assertContains('English',
-            $crawler->filter('body > header > div:nth-child(1) > div.top-bar-right > ul > li > a')->text()
+            $crawler->filter('#language-changer')->text()
         );
     }
 }

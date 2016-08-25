@@ -22,9 +22,9 @@
             <ul class="menu">
                 <li>
                     {% if app.request.getLocale() == 'en' %}
-                        <a href="{{ url('switch_locale', {'_locale': 'fr'}) }}">French</a>
+                        <a href="{{ url('switch_locale', {'_locale': 'fr'}) }}" id="language-changer">French</a>
                     {% else %}
-                        <a href="{{ url('switch_locale', {'_locale': 'en'}) }}">English</a>
+                        <a href="{{ url('switch_locale', {'_locale': 'en'}) }}" id="language-changer">English</a>
                     {% endif %}
                 </li>
             </ul>
