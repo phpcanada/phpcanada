@@ -7,26 +7,26 @@
                                                                   
 ```
 
-###Slack Channel:
+### Slack Channel:
 
 https://phpcanada.herokuapp.com/
 
-###Requirements:
+### Requirements:
 
 - PHP 7, MySQL, npm/NodeJS, Nginx
 
 
-###Donate and help us to maintain the server:
+### Donate and help us to maintain the server:
 
 Bitcoin: `18eA7mGb6xi89eQMjiNro5ykD7zSuKsngA`
 
 
-###PHP Code Style:
+### PHP Code Style:
 
 - Let's use [PSR-2](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md)
 - `./vendor/bin/phpcs ./src --standard=PSR2`
 
-###Front-end:
+### Front-end:
 
 - CSS Code Style: http://cssguidelin.es/
 
@@ -50,7 +50,7 @@ To customize the application:
     vim /src/AppBundle/Resources/private/scss/app.scss
 
 
-###Back-end:
+### Back-end:
 
 Useful commands:
 
