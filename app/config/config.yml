@@ -77,6 +77,10 @@ fos_user:
     firewall_name: main
     user_class: AppBundle\Entity\User
 
+    from_email:
+        address: "noreply@phpcanada.ca"
+        sender_name: "No Reply"
+
 # Doctrine Migrations
 doctrine_migrations:
     dir_name: "%kernel.root_dir%/DoctrineMigrations"

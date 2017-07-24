@@ -7,12 +7,6 @@
                     <li><a href="{{ url('fos_user_profile_show') }}">{{ 'app.my_profile'|trans({}, 'links') }}</a></li>
                     <li><a href="{{ url('fos_user_security_logout') }}">{{ 'app.logout'|trans({}, 'links') }}</a></li>
                 {% else %}
-                    <li>
-                        <a href="/login/github" class="nice small radius black button">
-                            <i class="fi-social-github"></i>
-                            Sign in with Github
-                        </a>
-                    </li>
                     <li><a href="{{ url('fos_user_security_login') }}">{{ 'app.login'|trans({}, 'links') }}</a></li>
                     <li><a href="{{ url('fos_user_registration_register') }}">{{ 'app.create_account'|trans({}, 'links') }}</a></li>
                 {% endif %}
